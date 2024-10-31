@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Entresto sesión 6</title>
+
+		<link rel="stylesheet" href="./css/styles346.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<!-- Scripts -->
+		<script src="./js/jquery-3.2.1.min.js"></script>
+		<script src="./js/functions.js"></script>
+	</head>
+	<body class="ancho">
+		<div class="container">
+			<img
+				src="./imagenes/portada346.webp"
+				alt="Portada"
+				class="cover-image" />
+
+			<a href="./index.html" class="boton-home"></a>
+			<a href="./index345.html" class="boton-atras"></a>
+			<a href="./index347.html" class="boton-next"></a>
+
+			<!-- modal  -->
+			<div class="openModal"></div>
+			<img src="./imagenes/wep-1.png" class="ancho" id="image-1" />
+			<!-- <div class="modal" style="display: none; height: 100%">
+				<div class="closeModal"></div>
+			</div> -->
+
+			<!-- modal  -->
+			<div class="openModal1"></div>
+			<img src="./imagenes/wep-2.png" class="ancho" id="image-2" />
+			<!-- <div class="modal" style="display: none; height: 100%">
+				<div class="closeModal"></div>
+			</div> -->
+
+			<!-- modal  -->
+			<div class="openModal2"></div>
+			<img src="./imagenes/wep-3.png" class="ancho" id="image-3" />
+			<!-- <div class="modal" style="display: none; height: 100%">
+				<div class="closeModal"></div>
+			</div> -->
+
+			<!-- modal  -->
+			<div class="openModal3"></div>
+			<img src="./imagenes/wep-4.png" class="ancho" id="image-4" />
+			<!-- <div class="modal" style="display: none; height: 100%">
+				<div class="closeModal"></div>
+			</div> -->
+
+			<div class="vutom-col"></div>
+
+
+			<div
+				class="puntero animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/puntero.png" alt="puntero" />
+			</div>
+
+			<div
+				class="puntero1 animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/puntero.png" alt="puntero1" />
+			</div>
+
+			<div
+				class="puntero2 animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/puntero.png" alt="puntero1" />
+			</div>
+
+			<div
+				class="puntero3 animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/puntero.png" alt="puntero3" />
+			</div>
+		</div>
+
+		<!-- Scripts -->
+
+		<script src="./js/script346.js"></script>
+		<script>
+			$(document).ready(function () {
+				const slides = ['slide354', 'slide355', 'slide356', 'slide357']
+
+				const exist = []
+
+				slides.forEach((item, index) => {
+					if (localStorage.getItem(item) === 'true') {
+						exist.push(item)
+						document.querySelector(`.puntero${index === 0 ? '' : index}`).style.display = 'none'
+						if (exist.length === 4) {
+					$('.boton-next').show()
+					$('.vutom-col').hide()
+				}
+					}
+				})
+
+				if (exist.length === 4) {
+					$('.boton-next').show()
+					$('.vutom-col').hide()
+				}
+			})
+		</script>
+	</body>
+</html>

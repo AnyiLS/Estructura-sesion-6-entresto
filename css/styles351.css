@@ -1,0 +1,315 @@
+
+body {
+	margin: 0;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.container .cover-image {
+	width: auto;
+	height: 100vh;
+}
+
+.boton-home {
+	position: absolute;
+	width: 6%;
+	height: 10%;
+	top: 4%;
+	right: 2%;
+	cursor: pointer;
+}
+
+.buton1 {
+	position: absolute;
+    width: 6%;
+    height: 4%;
+    top: 64%;
+    right: 34.7%;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.cuadr {
+	position: absolute;
+    width: 600%;
+    /* height: 45%; */
+    top: -834%;
+    right: -265%;
+	cursor: pointer;
+	z-index: 100;
+}
+
+.cuadr img {
+	width: 100%;
+    height: 100%;
+}
+
+.boton-next {
+	position: absolute;
+	width: 6%;
+	height: 10%;
+	top: 85%;
+	right: 2%;
+	cursor: pointer;
+}
+
+.boton-atras {
+	position: absolute;
+	width: 6%;
+	height: 10%;
+	top: 85%;
+	left: 2%;
+	cursor: pointer;
+}
+
+/* imagen 1 */
+.menu1 {
+	position: absolute;
+    width: 65%;
+    top: 24%;
+    left: 31.8%;
+    z-index: 100;
+	display: none;
+}
+
+.menu1 img {
+	width: 100%;
+	height: 100%;
+}
+
+.abrir1 {
+	position: absolute;
+	width: 22.7%;
+    height: 8.2%;
+    left: 5%;
+    top: 33.4%;
+	z-index: 100;
+	cursor: pointer;
+}
+/* imagen 1 */
+
+/* imagen 2 */
+.menu2 {
+	position: absolute;
+	width: 287%;
+    top: -246%;
+    left: 117.9%;
+	z-index: 100;
+	display: none;
+	cursor: pointer;
+}
+
+.menu2 img {
+	width: 100%;
+	height: 100%;
+}
+
+.abrir2 {
+	position: absolute;
+	width: 22.7%;
+    height: 8.2%;
+    left: 5%;
+    top: 43.8%;
+	z-index: 100;
+	cursor: pointer;
+}
+/* imagen 1 */
+
+/* imagen 2 */
+.menu3 {
+	position: absolute;
+	width: 287%;
+    top: -376.1%;
+    left: 117.9%;
+	z-index: 100;
+	display: none;
+	cursor: pointer;
+}
+
+.menu3 img {
+	width: 100%;
+	height: 100%;
+}
+
+.abrir3 {
+	position: absolute;
+	width: 22.7%;
+    height: 8.2%;
+    left: 5%;
+    top: 54.6%;
+	z-index: 100;
+	cursor: pointer;
+}
+/* imagen 1 */
+
+/* imagen 2 */
+.menu4 {
+	position: absolute;
+	width: 287%;
+    top: -511.1%;
+    left: 117.9%;
+	z-index: 100;
+	display: none;
+	cursor: pointer;
+}
+
+.menu4 img {
+	width: 100%;
+	height: 100%;
+}
+
+.abrir4 {
+	position: absolute;
+	width: 22.7%;
+    height: 8.2%;
+    left: 5%;
+    top: 65.6%;
+	z-index: 100;
+	cursor: pointer;
+}
+/* imagen 1 */
+
+.cursor {
+	position: absolute;
+	width: 5.2%;
+    top: 32.6%;
+    left: 22.7%;
+    transform: rotate(278deg);
+    cursor: pointer;
+}
+
+.cursor img {
+	width: 100%;
+	height: 100%;
+}
+
+.cursor1 {
+	position: absolute;
+	width: 5.2%;
+    top: 43%;
+    left: 22.7%;
+	transform: rotate(278deg);
+	cursor: pointer;
+}
+
+.cursor1 img {
+	width: 100%;
+	height: 100%;
+}
+
+.cursor2 {
+	position: absolute;
+	width: 5.2%;
+    top: 54%;
+    left: 22.7%;
+	transform: rotate(278deg);
+	cursor: pointer;
+}
+
+.cursor2 img {
+	width: 100%;
+	height: 100%;
+}
+
+.cursor3 {
+	position: absolute;
+	width: 5.2%;
+    top: 65.1%;
+    left: 22.7%;
+	transform: rotate(278deg);
+	cursor: pointer;
+}
+
+.cursor3 img {
+	width: 100%;
+	height: 100%;
+}
+
+.vutom-col {
+	position: absolute;
+	width: 4.4%;
+    height: 8%;
+    top: 86.7%;
+    right: 3%;
+	background: #ffffff80;
+	border-radius: 90px;
+}
+
+.circle::before, .circle::after {
+    content:"";
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    border: 10px solid #80808057;
+    border-radius:100%;
+    animation: latido linear 3s infinite;
+    background: #ffffff00;
+  }
+
+  .circle::after {
+    animation-delay: -1.5s;
+  }
+  
+  @keyframes latido {
+    0% { width:70px; height:70px; border:10px solid gray; }
+    100% { width:120px; height:120px; border:10px solid transparent; }
+  }
+
+
+/* Responsive */
+@media (max-width: 1365px) and (min-height: 768px) {
+	.container {
+		width: 100vw;
+		height: auto;
+	}
+
+	.container .cover-image {
+		width: auto;
+		height: 100vh;
+	}
+}
+
+@media (max-height: 767px) {
+	.container {
+		width: auto;
+		height: 100vh;
+	}
+}
+
+@media (min-height: 625px) and (max-height: 1280px) and (max-width: 1024px) {
+	.container {
+		width: 100vw;
+		height: auto;
+	}
+
+	.container .cover-image {
+		width: 100vw;
+		height: auto;
+	}
+}
+
+@media (max-height: 624px) and (max-width: 767px) {
+	.container {
+		width: 100vw;
+		height: auto;
+	}
+
+	.container .cover-image {
+		width: 100vw;
+		height: auto;
+	}
+}
