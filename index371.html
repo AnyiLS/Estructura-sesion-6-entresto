@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sybrava sesión 5, Juego</title>
+
+		<link rel="stylesheet" href="./css/styles371.css" />
+		<!-- Scripts -->
+		<script src="./js/jquery-3.2.1.min.js"></script>
+
+		<script src="./js/functions.js"></script>
+	</head>
+	<body class="ancho">
+		<div class="container">
+			<img
+				src="./imagenes/portada371.jpg"
+				alt="Portada"
+				class="cover-image" />
+
+			<!-- Estrellas -->
+			<div class="estrellas" style="display: none"></div>
+
+			<!-- Trajetas 1 - 10 -->
+			<div class="tarjeta1">
+				<img src="./imagenes/tarjeta1.png" alt="" />
+			</div>
+
+			<div class="tarjeta2" style="display: none">
+				<img src="./imagenes/tarjeta2.png" alt="" />
+			</div>
+
+			<div class="tarjeta3" style="display: none">
+				<img src="./imagenes/tarjeta3.png" alt="" />
+			</div>
+
+			<div class="tarjeta4" style="display: none">
+				<img src="./imagenes/tarjeta4.png" alt="" />
+			</div>
+
+			<div class="tarjeta5" style="display: none">
+				<img src="./imagenes/tarjeta5.png" alt="" />
+			</div>
+
+			<div class="tarjeta6" style="display: none">
+				<img src="./imagenes/tarjeta6.png" alt="" />
+			</div>
+
+			<div class="tarjeta7" style="display: none">
+				<img src="./imagenes/tarjeta7.png" alt="" />
+			</div>
+
+			<div class="tarjeta8" style="display: none">
+				<img src="./imagenes/tarjeta8.png" alt="" />
+			</div>
+
+			<div class="tarjeta9" style="display: none">
+				<img src="./imagenes/tarjeta9.png" alt="" />
+			</div>
+
+			<div class="tarjeta10" style="display: none">
+				<img src="./imagenes/tarjeta10.png" alt="" />
+			</div>
+
+			<!-- pop ups -->
+			<div class="car-pop1" style="display: none">
+				<img src="./imagenes/error1.jpg" alt="" />
+				<div class="cerrar"></div>
+			</div>
+
+			<div class="car-pop2" style="display: none">
+				<img src="./imagenes/error2.jpg" alt="" />
+				<div class="cerrar2"></div>
+			</div>
+
+			<div class="car-pop3" style="display: none">
+				<img src="./imagenes/error3.jpg" alt="" />
+				<div class="cerrar3"></div>
+			</div>
+
+			<div class="car-pop4" style="display: none">
+				<img src="./imagenes/error4.jpg" alt="" />
+				<div class="cerrar4"></div>
+			</div>
+
+			<div class="car-pop5" style="display: none">
+				<img src="./imagenes/error5.jpg" alt="" />
+				<div class="cerrar5"></div>
+			</div>
+
+			<div class="car-pop6" style="display: none">
+				<img src="./imagenes/error6.jpg" alt="" />
+				<div class="cerrar6"></div>
+			</div>
+
+			<div class="car-pop7" style="display: none">
+				<img src="./imagenes/error7.jpg" alt="" />
+				<div class="cerrar7"></div>
+			</div>
+
+			<div class="car-pop8" style="display: none">
+				<img src="./imagenes/error8.jpg" alt="" />
+				<div class="cerrar8"></div>
+			</div>
+
+			<div class="car-pop9" style="display: none">
+				<img src="./imagenes/error9.jpg" alt="" />
+				<div class="cerrar9"></div>
+			</div>
+
+			<div class="car-pop10" style="display: none">
+				<img src="./imagenes/error10.jpg" alt="" />
+				<div class="cerrar10"></div>
+			</div>
+			<!-- pop ups -->
+
+			<!-- falso o verdadero -->
+			<div class="falso"></div>
+			<div class="verdadero"></div>
+		</div>
+
+		<!-- Scripts -->
+		<script src="./js/datajuego.js"></script>
+		<script src="./js/sonido1.js"></script>
+		<!-- <script src="./js/draggable.js"></script> -->
+		<script src="./js/script371.js"></script>
+
+		<script>
+			document.querySelector('.puntico').style.width = `${
+				document.querySelector('.container').clientWidth / 100
+			}px`
+			document.querySelector('.circle').style.height = `${
+				(document.querySelector('.container').clientHeight * 1.8) / 100
+			}px`
+
+			document.querySelector('.puntico').style.top = `${
+				(document.querySelector('.container').clientHeight * 90.6) / 100
+			}px`
+
+			window.addEventListener('resize', function () {
+				document.querySelector('.circle').style.width = `${
+					(218 * document.querySelector('.container').clientWidth) /
+					1101
+				}px`
+				document.querySelector('.circle').style.height = `${
+					(215 * document.querySelector('.container').clientHeight) /
+					625
+				}px`
+			})
+		</script>
+	</body>
+</html>
