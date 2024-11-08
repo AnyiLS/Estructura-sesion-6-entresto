@@ -19,6 +19,9 @@ $(document).ready(function () {
 			$('.menu3').css('display', 'none')
 			$('.menu4').css('display', 'none')
 			bandera = !bandera
+			bandera1 = false
+			bandera2 = false
+			bandera3 = false
 		}
 	})
 
@@ -38,6 +41,9 @@ $(document).ready(function () {
 			$('.menu3').css('display', 'none')
 			$('.menu4').css('display', 'none')
 			bandera1 = !bandera1
+			bandera = false
+			bandera2 = false
+			bandera3 = false
 		}
 	})
 
@@ -57,6 +63,9 @@ $(document).ready(function () {
 			$('.menu2').css('display', 'none')
 			$('.menu4').css('display', 'none')
 			bandera2 = !bandera2
+			bandera1 = false
+			bandera = false
+			bandera3 = false
 		}
 	})
 
@@ -76,6 +85,9 @@ $(document).ready(function () {
 			$('.menu2').css('display', 'none')
 			$('.menu3').css('display', 'none')
 			bandera3 = !bandera3
+			bandera1 = false
+			bandera2 = false
+			bandera = false
 		}
 	})
 })

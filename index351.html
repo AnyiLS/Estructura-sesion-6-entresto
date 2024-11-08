@@ -24,28 +24,26 @@
 			<a href="./index350.html" class="boton-atras"></a>
 			<a href="./index352.html" class="boton-next"></a>
 
-
 			<!-- Buttoms -->
-			<div class="abrir1" id="abrir1">
-				
-			</div>
+			<div class="abrir1" id="abrir1"></div>
 
 			<img class="menu1" src="./imagenes/cuadro1.png" alt="" />
-				<div class="buton1" id="col-abrir" onclick="toggleImage()">
-					<img class="cuadr" src="imagenes/cuadro7.png" alt="" style="display: none;">
-				</div>
-
-			<div class="abrir2" id="abrir2">
-				<img class="menu2" src="./imagenes/cuadro2.png" alt="" />
+			<div class="buton1" id="col-abrir" onclick="toggleImage()">
+				<img
+					class="cuadr"
+					src="imagenes/cuadro7.png"
+					alt=""
+					style="display: none" />
 			</div>
 
-			<div class="abrir3" id="abrir3">
-				<img class="menu3" src="./imagenes/cuadro3.png" alt="" />
-			</div>
+			<div class="abrir2" id="abrir2"></div>
+			<img class="menu2" src="./imagenes/cuadro2.png" alt="" />
 
-			<div class="abrir4" id="abrir4">
-				<img class="menu4" src="./imagenes/cuadro4.png" alt="" />
-			</div>
+			<div class="abrir3" id="abrir3"></div>
+			<img class="menu3" src="./imagenes/cuadro3.png" alt="" />
+
+			<div class="abrir4" id="abrir4"></div>
+			<img class="menu4" src="./imagenes/cuadro4.png" alt="" />
 
 			<div
 				class="cursor circle animate__animated animate__pulse animate__infinite">
@@ -99,20 +97,19 @@
 			})
 		</script>
 
-<script>
-	let bandera = false
-	function toggleImage() {
-		const image = document.querySelector(".cuadr"); // Selecciona la imagen dentro de 'col-abrir'
-		if (!bandera) {
-			image.style.display = "block"; // Muestra la imagen
-			document.querySelector(".menu1").style.display = 'block';
-			bandera = !bandera
-		} else {
-			image.style.display = "none"; // Oculta la imagen
-			bandera = !bandera
-
-		}
-	}
-</script>
+		<script>
+			let bandera = false
+			function toggleImage() {
+				const image = document.querySelector('.cuadr') // Selecciona la imagen dentro de 'col-abrir'
+				if (!bandera) {
+					image.style.display = 'block' // Muestra la imagen
+					document.querySelector('.menu1').style.display = 'block'
+					bandera = !bandera
+				} else {
+					image.style.display = 'none' // Oculta la imagen
+					bandera = !bandera
+				}
+			}
+		</script>
 	</body>
 </html>

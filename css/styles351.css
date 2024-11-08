@@ -102,10 +102,10 @@ body {
 /* imagen 2 */
 .menu2 {
 	position: absolute;
-	width: 287%;
-    top: -246%;
-    left: 117.9%;
-	z-index: 100;
+    width: 65%;
+    top: 23.7%;
+    left: 31.8%;
+    z-index: 100;
 	display: none;
 	cursor: pointer;
 }
@@ -129,10 +129,10 @@ body {
 /* imagen 2 */
 .menu3 {
 	position: absolute;
-	width: 287%;
-    top: -376.1%;
-    left: 117.9%;
-	z-index: 100;
+    width: 65%;
+    top: 23.7%;
+    left: 31.8%;
+    z-index: 100;
 	display: none;
 	cursor: pointer;
 }
@@ -156,10 +156,10 @@ body {
 /* imagen 2 */
 .menu4 {
 	position: absolute;
-	width: 287%;
-    top: -511.1%;
-    left: 117.9%;
-	z-index: 100;
+    width: 65%;
+    top: 23.7%;
+    left: 31.8%;
+    z-index: 100;
 	display: none;
 	cursor: pointer;
 }

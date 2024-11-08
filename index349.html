@@ -21,16 +21,46 @@
 			<a href="./index348.html" class="boton-atras"></a>
 			<a href="./index350.html" class="boton-next"></a>
 
-			<a href="https://eml.com.co/entresto/UI-R_INF sesion 6_11-10-24_dzi.pdf" class="dowload" target="_blank"></a>
+			<div  class="dowload"></div>
 
 			<div
 				class="puntero animate__animated animate__pulse animate__infinite">
 				<img src="./imagenes/puntero.png" alt="puntero" />
 			</div>
+			<div class="vutom-col"></div>
 		</div>
 
 		<!-- Scripts -->
 
 		<script src="./js/scripts.js"></script>
+		<script>
+			$(document).ready(function () {
+				const slides = ['slider349']
+
+				const exist = []
+
+				slides.forEach((item, index) => {
+					if (localStorage.getItem(item) === 'true') {
+						exist.push(item)
+						document.querySelector(`.puntero${index === 0 ? '' : index}`).style.display = 'none'
+						if (exist.length === 1) {
+					$('.boton-next').show()
+					$('.vutom-col').hide()
+				}
+					}
+				})
+
+				if (exist.length === 1) {
+					$('.boton-next').show()
+					$('.vutom-col').hide()
+				}
+
+				$('.dowload').on('click', () => {
+					$('.vutom-col').hide()
+					localStorage.setItem('slider349', 'true')
+					window.open('https://eml.com.co/entresto/UI-R_INF sesion 6_11-10-24_dzi.pdf', "_blank")
+				})
+			})
+		</script>
 	</body>
 </html>

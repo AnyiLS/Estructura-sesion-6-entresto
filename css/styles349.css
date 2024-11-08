@@ -16,6 +16,16 @@ body {
 	position: relative;
 }
 
+.vutom-col {
+	position: absolute;
+	width: 5.4%;
+    height: 8.4%;
+    top: 87%;
+    right: 3%;
+	background: #ffffff80;
+	border-radius: 90px;
+}
+
 .container .cover-image {
 	width: auto;
 	height: 100vh;
